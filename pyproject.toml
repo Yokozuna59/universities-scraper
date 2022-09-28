@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "universities-scraper"
+version = "0.0.1"
+description = "A web scraping tool fetch and clean and optimize data from universities websites"
+authors = ["Yokozuna59 <u.yokozuna@gmail.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "universities_scraper"}]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[mypy]
+ignore_missing_imports = true
+no_strict_optional = true
