@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict, List
 
 BANNER_DOMAIN = "https://banner9-registration.kfupm.edu.sa"
 
@@ -34,12 +34,12 @@ class Banner9Course:
     def __init__(self) -> None:
         pass
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> Dict:
         pass
 
 
 class Banner9Term:
-    def __init__(self, term_code, description) -> None:
+    def __init__(self, term_code: str, description: str) -> None:
         self.__term_code = term_code
         self.__term_short_code = term_code[2:5]
         self.__description = description
@@ -54,7 +54,7 @@ class Banner9Term:
     def add_course(self, course: Banner9Course) -> None:
         self.__courses.append(course.to_dict())
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> Dict:
         dictionary = {
             "termCode": self.__term_code,
             "termShortCode": self.__term_short_code,
