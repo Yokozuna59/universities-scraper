@@ -228,7 +228,7 @@ use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "selenium"
-version = "4.4.3"
+version = "4.5.0"
 description = ""
 category = "main"
 optional = false
