@@ -36,17 +36,6 @@ html5lib = ["html5lib"]
 lxml = ["lxml"]
 
 [[package]]
-name = "bs4"
-version = "0.0.1"
-description = "Dummy package for Beautiful Soup"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-beautifulsoup4 = "*"
-
-[[package]]
 name = "certifi"
 version = "2022.9.24"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -333,13 +322,12 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "72fbd0de410bee4658bb883e2c607d6b45120849158ac42c18f316dd41806f5b"
+content-hash = "49535165695870103d48fddf530e244175ecd267611c74814f1e8ffc6667a947"
 
 [metadata.files]
 async-generator = []
 attrs = []
 beautifulsoup4 = []
-bs4 = []
 certifi = []
 cffi = []
 charset-normalizer = []
