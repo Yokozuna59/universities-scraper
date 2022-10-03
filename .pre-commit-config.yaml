@@ -73,3 +73,8 @@ repos:
     hooks:
       - id: pylint
         args: [--rcfile=.pylintrc]
+
+  - repo: https://github.com/qoomon/git-conventional-commits
+    rev: v2.1.2
+    hooks:
+      - id: conventional-commits
