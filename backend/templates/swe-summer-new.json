@@ -1,0 +1,46 @@
+{
+  "freshman": {
+    "firstTerm": {
+      "credit": 17,
+      "courses": ["MATH 101", "ENGL 101", "PE 101", "ICS 104", "PHYS 101", "IAS 121"]
+    },
+    "secondTerm": {
+      "credit": 17,
+      "courses": ["MATH 102", "ENGL 102", "ICS 108", "PHYS 102", "IAS 111"]
+    }
+  },
+  "sophomore": {
+    "firstTerm": {
+      "credit": 17,
+      "courses": ["MATH 201", "ISE 291", "SWE 206", "ICS 202", "CHEM 101"]
+    },
+    "secondTerm": {
+      "credit": 17,
+      "courses": ["MATH 208", "COE 292", "SWE 216", "ICS 253", "COE 233", "IAS 212"]
+    }
+  },
+  "junior": {
+    "firstTerm": {
+      "credit": 16,
+      "courses": ["STAT 319", "ENGL 214", "SWE 316", "ICS 321", "ICS 343"]
+    },
+    "secondTerm": {
+      "credit": 16,
+      "courses": ["SWE 363", "CGS 392", "SWE 326", "ICS 344", "SWE 387", "BUS 200"]
+    },
+    "summerTerm": {
+      "credit": 0,
+      "courses": ["SWE 399"]
+    }
+  },
+  "senior": {
+    "firstTerm": {
+      "credit": 14,
+      "courses": ["ICS/SWE XXX", "ICS/SWE XXX", "SWE 439", "SWE 411", "IAS XXX"]
+    },
+    "secondTerm": {
+      "credit": 14,
+      "courses": ["ICS/SWE XXX", "ICS/SWE XXX", "SWE 412", "ICS 433", "GS XXX"]
+    }
+  }
+}
