@@ -1,0 +1,62 @@
+[
+  {
+    "college": "Computing and Mathematics",
+    "credit": 128,
+    "degree": "bs",
+    "department": "Information & Computer Science",
+    "description": "New Plan Bachelor of Science in Software Engineering with Summer Training",
+    "level": "undergraduate",
+    "major": "swe",
+    "name": "BS-SWE-SUMMER NEW",
+    "training": "summer",
+    "version": "2022.08.31"
+  },
+  {
+    "college": "Computing and Mathematics",
+    "credit": 132,
+    "degree": "bs",
+    "department": "Information & Computer Science",
+    "description": "Old Plan Bachelor of Science in Software Engineering with Summer Training",
+    "level": "undergraduate",
+    "major": "swe",
+    "name": "BS-SWE-SUMMER OLD",
+    "training": "summer",
+    "version": "2017.06.14"
+  },
+  {
+    "college": "Computing and Mathematics",
+    "credit": 128,
+    "degree": "bs",
+    "department": "Information & Computer Science",
+    "description": "New Plan Bachelor of Science in Computer Science with Summer Training",
+    "level": "undergraduate",
+    "major": "cs",
+    "name": "BS-CS-SUMMER NEW",
+    "training": "summer",
+    "version": "2020.04.11"
+  },
+  {
+    "college": "Computing and Mathematics",
+    "credit": 131,
+    "degree": "bs",
+    "department": "Information & Computer Science",
+    "description": "Old Plan Bachelor of Science in Software Engineering with Summer Training",
+    "level": "undergraduate",
+    "major": "cs",
+    "name": "BS-CS-SUMMER OLD",
+    "training": "summer",
+    "version": "2017.06.14"
+  },
+  {
+    "college": "Computing and Mathematics",
+    "credit": 128,
+    "degree": "bs",
+    "department": "Information & Computer Science",
+    "description": "New Plan Bachelor of Science in Computer Science with Internship",
+    "level": "undergraduate",
+    "major": "cs",
+    "name": "BS-CS-INTERNSHIP NEW",
+    "training": "internship",
+    "version": "2020.04.11"
+  }
+]
