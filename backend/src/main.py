@@ -21,34 +21,34 @@ async def templates():
 
 @app.get("/templates/cs-internship-new")
 async def cs_internship_new():
-    with open("../template/cs-internship-new.json") as file:
+    with open("../templates/cs-internship-new.json") as file:
         file_dict = load(file)
     return {"data": file_dict}
 
 
 @app.get("/templates/cs-summer-new")
 async def cs_summer_new():
-    with open("../template/cs-summer-new.json") as file:
+    with open("../templates/cs-summer-new.json") as file:
         file_dict = load(file)
     return {"data": file_dict}
 
 
 @app.get("/templates/cs-summer-old")
 async def cs_summer_old():
-    with open("../template/cs-summer-old.json") as file:
+    with open("../templates/cs-summer-old.json") as file:
         file_dict = load(file)
     return {"data": file_dict}
 
 
 @app.get("/templates/swe-summer-new")
 async def swe_summer_new():
-    with open("../template/swe-summer-new.json") as file:
+    with open("../templates/swe-summer-new.json") as file:
         file_dict = load(file)
     return {"data": file_dict}
 
 
 @app.get("/templates/swe-summer-old")
 async def swe_summer_old():
-    with open("../template/swe-summer-old.json") as file:
+    with open("../templates/swe-summer-old.json") as file:
         file_dict = load(file)
     return {"data": file_dict}
