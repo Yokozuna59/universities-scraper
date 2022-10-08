@@ -2,45 +2,318 @@
   "freshman": {
     "firstTerm": {
       "credit": 17,
-      "courses": ["MATH 101", "ENGL 101", "PE 101", "ICS 104", "PHYS 101", "IAS 121"]
+      "courses": {
+        "MATH 101": {
+          "credit": 4,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "ENGL 101": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "PE 101": {
+          "credit": 1,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "ICS 104": {
+          "credit": 3,
+          "activate": ["computer", "project"],
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "PHYS 101": {
+          "credit": 4,
+          "activate": ["experiment"],
+          "corequisites": ["MATH 101"],
+          "prerequisites": null
+        },
+        "IAS 121": {
+          "credit": 2,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        }
+      }
     },
     "secondTerm": {
       "credit": 17,
-      "courses": ["MATH 102", "ENGL 102", "ICS 108", "PHYS 102", "IAS 111"]
+      "courses": {
+        "MATH 102": {
+          "credit": 4,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["MATH 101"]
+        },
+        "ENGL 102": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["ENGL 101"]
+        },
+        "ICS 108": {
+          "credit": 4,
+          "activate": ["computer", "project"],
+          "corequisites": null,
+          "prerequisites": ["ICS 104"]
+        },
+        "PHYS 102": {
+          "credit": 4,
+          "activate": ["experiment"],
+          "corequisites": ["MATH 102"],
+          "prerequisites": ["PHYS 101"]
+        },
+        "IAS 111": {
+          "credit": 2,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        }
+      }
     }
   },
   "sophomore": {
     "firstTerm": {
       "credit": 17,
-      "courses": ["MATH 201", "ISE 291", "SWE 206", "ICS 202", "CHEM 101"]
+      "courses": {
+        "MATH 201": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["MATH 102"]
+        },
+        "ISE 291": {
+          "credit": 3,
+          "activate": ["project"],
+          "corequisites": null,
+          "prerequisites": [["MATH 102", "MATH 106"], "ICS 104"]
+        },
+        "SWE 206": {
+          "credit": 3,
+          "activate": ["computer", "project"],
+          "corequisites": null,
+          "prerequisites": ["ICS 108"]
+        },
+        "ICS 202": {
+          "credit": 4,
+          "activate": ["computer", "project"],
+          "corequisites": null,
+          "prerequisites": ["ICS 108"]
+        },
+        "CHEM 101": {
+          "credit": 4,
+          "activate": ["experiment"],
+          "corequisites": null,
+          "prerequisites": null
+        }
+      }
     },
     "secondTerm": {
       "credit": 17,
-      "courses": ["MATH 208", "COE 292", "SWE 216", "ICS 253", "COE 233", "IAS 212"]
+      "courses": {
+        "MATH 208": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["MATH 102"]
+        },
+        "COE 292": {
+          "credit": 3,
+          "activate": ["project"],
+          "corequisites": null,
+          "prerequisites": ["ISE 291"]
+        },
+        "SWE 216": {
+          "credit": 3,
+          "activate": ["project"],
+          "corequisites": null,
+          "prerequisites": ["SWE 206"]
+        },
+        "ICS 253": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": [["ICS 104", "ICS 102"]]
+        },
+        "COE 233": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["ICS 104"]
+        },
+        "IAS 212": {
+          "credit": 2,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        }
+      }
     }
   },
   "junior": {
     "firstTerm": {
       "credit": 16,
-      "courses": ["STAT 319", "ENGL 214", "SWE 316", "ICS 321", "ICS 343"]
+      "courses": {
+        "STAT 319": {
+          "credit": 3,
+          "activate": ["computer"],
+          "corequisites": null,
+          "prerequisites": ["MATH 102"]
+        },
+        "ENGL 214": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["ENGL 102"]
+        },
+        "SWE 316": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["SWE 206"]
+        },
+        "ICS 321": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["ICS 202"]
+        },
+        "ICS 343": {
+          "credit": 4,
+          "activate": ["computer"],
+          "corequisites": null,
+          "prerequisites": [["ICS 108", "ICS 201"]]
+        }
+      }
     },
     "secondTerm": {
       "credit": 16,
-      "courses": ["SWE 363", "CGS 392", "SWE 326", "ICS 344", "SWE 387", "BUS 200"]
+      "courses": {
+        "SWE 363": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["JUNIOR"]
+        },
+        "CGS 392": {
+          "credit": 1,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["ENGL 214"]
+        },
+        "SWE 326": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["SWE 216"]
+        },
+        "ICS 344": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": [["ICS 343", "COE 344"]]
+        },
+        "SWE 387": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["JUNIOR"]
+        },
+        "BUS 200": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        }
+      }
     },
     "summerTerm": {
       "credit": 0,
-      "courses": ["SWE 399"]
+      "courses": {
+        "SWE 399": {
+          "credit": 0,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["SWE 363", "ENGL 214"]
+        }
+      }
     }
   },
   "senior": {
     "firstTerm": {
       "credit": 14,
-      "courses": ["ICS/SWE XXX", "ICS/SWE XXX", "SWE 439", "SWE 411", "IAS XXX"]
+      "courses": {
+        "ICS/SWE XXX": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "ICS/SWE XXX": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "SWE 439": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["SWE 316", "STAT 319"]
+        },
+        "SWE 411": {
+          "credit": 3,
+          "activate": ["computer"],
+          "corequisites": null,
+          "prerequisites": ["SWE 316", "SWE 387"]
+        },
+        "IAS XXX": {
+          "credit": 2,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        }
+      }
     },
     "secondTerm": {
       "credit": 14,
-      "courses": ["ICS/SWE XXX", "ICS/SWE XXX", "SWE 412", "ICS 433", "GS XXX"]
+      "courses": {
+        "ICS/SWE XXX": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "ICS/SWE XXX": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": null
+        },
+        "SWE 412": {
+          "credit": 2,
+          "activate": ["computer"],
+          "corequisites": null,
+          "prerequisites": ["SWE 326", "SWE 411"]
+        },
+        "ICS 433": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": [["COE 233", "COE 301"]]
+        },
+        "GS XXX": {
+          "credit": 3,
+          "activate": null,
+          "corequisites": null,
+          "prerequisites": ["ENGL 102"]
+        }
+      }
     }
   }
 }
