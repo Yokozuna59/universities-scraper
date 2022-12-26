@@ -37,14 +37,14 @@ repos:
         args: [--py36-plus]
 
   - repo: https://github.com/pycqa/isort
-    rev: 5.11.0
+    rev: 5.11.4
     hooks:
       - id: isort
         files: "\\.(py)$"
         args: [--settings-path=pyproject.toml]
 
   - repo: https://github.com/PyCQA/docformatter
-    rev: v1.5.0
+    rev: v1.5.1
     hooks:
       - id: docformatter
         args: [--in-place]
@@ -75,6 +75,6 @@ repos:
         args: [--rcfile=.pylintrc]
 
   - repo: https://github.com/qoomon/git-conventional-commits
-    rev: v2.3.0
+    rev: v2.4.0
     hooks:
       - id: conventional-commits
